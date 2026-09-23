@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Admiral — Happy Birthday ⚓</title>
+<meta name="theme-color" content="#080706">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap');
+
+:root{
+  --gold:#e8bd61;
+  --gold-soft:#f5d98e;
+  --ink:#080706;
+  --paper:#f7f1e5;
+  --muted:#b8afa0;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; min-height:100vh; overflow-x:hidden;
+  background:
+    radial-gradient(circle at 50% 8%,rgba(197,143,53,.18),transparent 28%),
+    radial-gradient(circle at 15% 85%,rgba(103,67,20,.13),transparent 25%),
+    #080706;
+  color:#fff;
+  font-family:"DM Sans",Arial,sans-serif;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;
+  background-image:radial-gradient(#fff 0.7px,transparent .7px);
+  background-size:42px 42px;
+  mask-image:linear-gradient(to bottom,black,transparent 75%);
+}
+.wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px 18px}
+.card{
+  width:min(760px,100%); position:relative; overflow:hidden;
+  border:1px solid rgba(232,189,97,.25);
+  border-radius:30px;
+  background:linear-gradient(145deg,rgba(28,21,14,.94),rgba(10,9,8,.96));
+  box-shadow:0 30px 100px rgba(0,0,0,.72), inset 0 1px rgba(255,255,255,.04);
+  padding:54px 26px 28px;
+}
+.glow{position:absolute;width:280px;height:280px;border-radius:50%;background:rgba(232,189,97,.08);filter:blur(50px);top:-150px;left:50%;transform:translateX(-50%);pointer-events:none}
+.eyebrow{text-align:center;color:var(--gold);font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;opacity:.85}
+.hero{text-align:center;position:relative;z-index:1}
+.symbol{font-size:45px;filter:drop-shadow(0 0 18px rgba(232,189,97,.35));animation:float 4s ease-in-out infinite}
+h1{
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:clamp(3.1rem,12vw,6.3rem);line-height:.86;
+  font-weight:600;margin:20px 0 13px;
+  letter-spacing:-.035em;
+  color:var(--gold-soft);
+  text-shadow:0 0 35px rgba(232,189,97,.16);
+}
+.subtitle{color:#d8d0c4;font-size:.96rem;line-height:1.7}
+.intro{max-width:520px;margin:28px auto 0;color:#b7aea0;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.35rem;line-height:1.45;font-style:italic}
+.divider{width:75px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:27px auto}
+button{
+  border:1px solid rgba(255,255,255,.08);border-radius:999px;
+  padding:14px 23px;margin:8px 4px;background:linear-gradient(180deg,#edc96f,#c99332);
+  color:#1a1207;font-weight:700;font-size:.9rem;cursor:pointer;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);transition:.25s transform,.25s box-shadow;
+}
+button:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,0,0,.4)}
+button:active{transform:translateY(0)}
+.secondary{background:transparent;color:#e6dccb;border-color:rgba(232,189,97,.35);box-shadow:none}
+.letter{
+  display:none;margin-top:30px;padding:28px 22px;
+  border:1px solid rgba(232,189,97,.16);border-radius:22px;
+  background:rgba(255,255,255,.035);
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:1.22rem;line-height:1.72;color:#eee7da;
+}
+.letter.show{display:block;animation:reveal 1s ease both}
+.letter p{margin:0 0 19px}
+.letter .opening{font-size:1.42rem;color:#f4d78e}
+.sign{text-align:right;color:var(--gold-soft);font-style:italic;margin-top:28px!important}
+.closing{
+  text-align:center;margin-top:34px;padding-top:28px;
+  border-top:1px solid rgba(232,189,97,.13);
+  color:#d6c8b5;font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:1.45rem;line-height:1.45;
+}
+.closing strong{display:block;color:var(--gold-soft);font-size:1.7rem;margin-top:10px}
+.music{margin-top:22px;color:#8f877b;font-size:.78rem}
+.footer{text-align:center;margin-top:28px;color:#70695f;font-size:.7rem;letter-spacing:.08em}
+#particles{position:fixed;inset:0;pointer-events:none;z-index:20}
+.spark{position:absolute;width:3px;height:3px;border-radius:50%;background:#f5d98e;box-shadow:0 0 8px #f5d98e;animation:fall linear forwards}
+@keyframes reveal{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes float{50%{transform:translateY(-7px)}}
+@keyframes fall{to{transform:translateY(110vh) translateX(var(--drift));opacity:0}}
+@media(max-width:520px){
+  .wrap{padding:18px 12px}.card{padding:42px 19px 24px;border-radius:25px}
+  .letter{font-size:1.14rem;padding:24px 18px}
+  .intro{font-size:1.2rem}
+}
+</style>
+</head>
+<body>
+<div id="particles"></div>
+
+<main class="wrap">
+  <section class="card">
+    <div class="glow"></div>
+
+    <div class="hero">
+      <div class="eyebrow">A little something from your brother</div>
+      <div class="symbol">⚓</div>
+      <h1>Happy Birthday,<br>Admiral.</h1>
+      <div class="subtitle">Today is yours. So for a moment, just breathe, smile, and let yourself be celebrated.</div>
+
+      <div class="intro">
+        “Some people are given to us by blood.<br>
+        Others become family through the journey.”
+      </div>
+
+      <div class="divider"></div>
+
+      <button onclick="openLetter()">💌 Open your letter</button>
+      <button class="secondary" onclick="makeWish()">✨ Make a wish</button>
+
+      <div class="music">
+        🎵 <strong>Celebration — Joeboy</strong><br>
+        <button class="secondary" onclick="window.open('https://www.youtube.com/results?search_query=Joeboy+Celebration+official','_blank')">▶ Play the song</button>
+      </div>
+    </div>
+
+    <article id="letter" class="letter">
+      <p class="opening"><strong>Dearest brother,</strong></p>
+
+      <p>I write to you today with a heart full of goodwill and joy, to wish you a very, very happy birthday.</p>
+
+      <p>I welcome you into this new age, and I pray that every pain you carry, whether hidden or spoken, is healed completely. May the things you've always sought in earnest be granted to you by the Almighty, in His infinite grace and mercy.</p>
+
+      <p>I want you to remember that some things simply take time before they manifest. Don't despair. Don't be troubled. Your story is still being written, and I believe your big testimony is on its way, brother. 🥹</p>
+
+      <p>It's not how far; it's how well.</p>
+
+      <p>I pray the Almighty makes you more <strong>sapient</strong>, and that He will <strong>cosset</strong> you in this new age and in all the years to come. May this new chapter be filled with fulfilled promises, overflowing happiness, and a joy that never ceases from your heart.</p>
+
+      <p>I'm wishing you wealth backed by good health, peace of mind, answered prayers, and many reasons to look back and say, “God really came through for me.”</p>
+
+      <p>Happy birthday once again, Admiral. God bless you, my brother.</p>
+
+      <p><strong>Shine and outshine.</strong> You're not one to be covered. You are not one to be defeated. You are a victor, and a victor you'll always be.</p>
+
+      <p class="sign">From your brother,<br><strong>Marvellous ❤️</strong></p>
+
+      <div class="closing">
+        Whatever this new year brings,<br>
+        I hope you never forget that you don't walk it alone.
+        <strong>Happy Birthday, Admiral. ⚓</strong>
+      </div>
+    </article>
+
+    <div class="footer">Made with love • for Admiral • 🎈</div>
+  </section>
+</main>
+
+<script>
+function openLetter(){
+  document.getElementById('letter').classList.add('show');
+  document.getElementById('letter').scrollIntoView({behavior:'smooth',block:'center'});
+  celebrate(45);
+}
+function makeWish(){
+  const old=document.getElementById('wish');
+  if(old) old.remove();
+  const msg=document.createElement('div');
+  msg.id='wish';
+  msg.textContent='✨ May this one find its way to you.';
+  msg.style.cssText='margin-top:18px;color:#f5d98e;font-family:"Cormorant Garamond",serif;font-size:1.25rem;font-style:italic;animation:reveal .8s ease both';
+  document.querySelector('.hero').appendChild(msg);
+  celebrate(25);
+}
+function celebrate(n){
+  const box=document.getElementById('particles');
+  for(let i=0;i<n;i++){
+    const s=document.createElement('i');
+    s.className='spark';
+    s.style.left=Math.random()*100+'vw';
+    s.style.top=(-10-Math.random()*20)+'px';
+    s.style.setProperty('--drift',(Math.random()*180-90)+'px');
+    s.style.animationDuration=(3+Math.random()*3)+'s';
+    s.style.animationDelay=(Math.random()*0.8)+'s';
+    box.appendChild(s);
+    setTimeout(()=>s.remove(),7000);
+  }
+}
+</script>
+</body>
+</html>
